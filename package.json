@@ -1,0 +1,12 @@
+{
+  "name": "y",
+  "version": "1.0.1",
+  "description": "Easy interface for autofilling inputs",
+  "main": "index.js",
+  "repository": "git@github.com:moigonzalez/loremipsumer.git",
+  "author": "Daniel Bolivar <daniel.bolivar@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ramda-fantasy": "^0.8.0"
+  }
+}
