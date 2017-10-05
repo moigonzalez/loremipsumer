@@ -7,6 +7,32 @@
   "author": "Daniel Bolivar <daniel.bolivar@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "ramda-fantasy": "^0.8.0"
+    "ramda-fantasy": "^0.8.0",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-env": "1.5.1",
+    "eslint": "^3.19.0",
+    "eslint-loader": "1.7.1",
+    "eslint-config-airbnb-base": "11.3.1",
+    "eslint-config-prettier": "2.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "jest": "20.0.4",
+    "prettier": "1.5.2"
+  },
+  "scripts": {
+    "format": "prettier --write --single-quote --print-width=120 --tab-width=2 \"**/*.js\"",
+    "lint": "eslint **/*.js --quiet",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest -u",
+    "build:dev": "NODE_ENV=dev webpack",
+    "build:prod": "NODE_ENV=production webpack -p",
+    "watch": "NODE_ENV=dev webpack --watch"
   }
 }
